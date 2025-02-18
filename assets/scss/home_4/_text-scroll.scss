@@ -1,0 +1,48 @@
+.bi-text-scroll-section-1 {
+	overflow: hidden;
+}
+.bi-text-scroll-item-1 {
+	h3 {
+		font-size: 150px;
+		font-weight: 700;
+		margin: 0px 20px;
+		display: inline-block;
+		color: var(--base-color);
+		-webkit-text-fill-color: transparent;
+		-webkit-text-stroke-width: 2px;
+		-webkit-text-stroke-color: var(--base-color);
+	}
+}
+.bi-text-scroll-item-2 {
+	display: flow-root;
+	overflow: hidden;
+	padding-top: 25px;
+	background: linear-gradient(135deg, #EB5C18 0%, #F95055 45.72%, #CA2DB8 100%);
+	h3 {
+		font-size: 92px;
+		font-weight: 700;
+		margin: 0px 20px;
+		padding-top: 20px;
+		display: inline-block;
+	}
+	span {
+		top: -25px;
+		position: relative;
+		display: inline-block;
+	}
+	.scroll-text-1 {
+		color: #1B1C35;
+	}
+	.scroll-text-2 {
+		color: #fff;
+		-webkit-text-fill-color: transparent;
+		-webkit-text-stroke-width: 2px;
+		-webkit-text-stroke-color: #fff;
+	}
+	.scroll-text-3 {
+		color: rgba(27, 28, 53, 0.30);
+	}
+	.scroll-text-4 {
+		color: #fff;
+	}
+}

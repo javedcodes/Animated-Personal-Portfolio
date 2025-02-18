@@ -1,0 +1,55 @@
+.bi-privacy-policy-section,
+.bi-terms-condition-section {
+	h2 {
+		color: #0E0E0E;
+		font-size: 70px;
+		font-weight: 700;
+		text-align: center;
+	}
+}
+.bi-privacy-policy-content,
+.bi-terms-condition-content {
+	margin-top: 50px;
+	padding: 40px 30px;
+	border-radius: 20px;
+	border: 1px solid rgba(22, 35, 43, 0.10);
+	h3 {
+		color: #0E0E0E;
+		font-size: 28px;
+		font-weight: 600;
+		padding-bottom: 20px;
+	}
+	p {
+		padding-bottom: 20px;
+	}
+	ul {
+		margin-bottom: 20px;
+	}
+	li {
+		padding-left: 25px;
+		position: relative;
+		margin-bottom: 15px;
+		&:before {
+			left: 0;
+			top: 10px;
+			width: 8px;
+			height: 8px;
+			content: '';
+			border-radius: 100%;
+			position: absolute;
+			background-color: #0E0E0E;
+		}
+	}
+}
+.bi-terms-condition-content {
+	ul {
+		padding: 30px;
+		border-radius: 20px;
+		background-color: rgba(22, 35, 43, 0.05);
+	}
+	li {
+		&:before {
+			background-color: var(--base-color);
+		}
+	}
+}

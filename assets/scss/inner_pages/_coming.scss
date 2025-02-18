@@ -1,0 +1,82 @@
+.bi-coming-soon-section {
+	padding-bottom: 100px;
+}
+.bi-coming-soon-section {
+	.brand-logo {
+		max-width: 135px;
+		padding: 30px 0px;
+	}
+}
+.coming-soon__countdown {
+	.single {
+		width: 230px;
+		height: 195px;
+		margin: 0px 11px;
+		padding-top: 40px;
+		text-align: center;
+		margin-bottom: 20px;
+		border-radius: 20px;
+		background: rgba(255, 255, 255, 0.10);
+		h1 {
+			font-size: 55px;
+			font-weight: 800;
+			color: var(--base-color);
+		}
+		p {
+			color: #fff;
+			font-size: 26px;
+			font-weight: 600;
+			font-family: var(--heading);
+		}
+	}
+}
+
+.bi-coming-soon-subscription {
+	margin: 0 auto;
+	max-width: 555px;
+	margin-top: 40px;
+	input {
+		color: #fff;
+		width: 100%;
+		height: 72px;
+		border: none;
+		padding-left: 15px;
+		border-radius: 5px;
+		font-family: var(--heading);
+		background: rgba(255, 255, 255, 0.1);
+	}
+	 button {
+	 	top: 0;
+	 	right: 0;
+	 	color: #fff;
+	 	border: none;
+	 	height: 72px;
+	 	font-weight: 600;
+	 	padding: 0px 30px;
+	 	position: absolute;
+	 	border-radius: 10px;
+	 	font-family: var(--heading);
+	 	text-transform: uppercase;
+	 	background: var(--base-color);
+	 }
+}
+.coming-soon-socail {
+	margin-top: 50px;
+	li {
+		a {
+			color: #fff;
+			width: 50px;
+			height: 50px;
+			display: flex;
+			margin: 0px 10px;
+			border-radius: 100%;
+			align-items: center;
+			border: 1px solid #fff;
+			justify-content: center;
+			&:hover {
+				border: 1px solid var(--base-color);
+				background-color: var(--base-color);
+			}
+		}
+	}
+}

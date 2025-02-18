@@ -1,0 +1,49 @@
+.bi-bredcrumbs-section {
+	z-index: 1;
+	.background_overlay {
+		z-index: -1;
+		background: linear-gradient(0deg, rgba(22, 35, 43, 0.90) 0%, rgba(22, 35, 43, 0.90) 100%);
+	}
+}
+.bi-breadcrumbs-content {
+	padding: 300px 0px 230px;
+	h2 {
+		color: #fff;
+		font-size: 98px;
+		font-weight: 700;
+		padding-bottom: 40px;
+	}
+	ul {
+		padding: 18px 30px;
+		border-radius: 10px;
+		display: inline-block;
+		font-family: var(--heading);
+		border: 1px solid var(--base-color);
+		background: rgba(255, 56, 56, 0.10);
+		li {
+			font-weight: 700;
+			margin-right: 40px;
+			position: relative;
+			color: var(--base-color);
+			a {
+				color: #fff;
+			}
+			&:last-child {
+				margin-right: 0;
+				&:before {
+					display: none;
+				}
+			}
+			&:before {
+				top: 4px;
+				width: 24px;
+				content: '';
+				height: 24px;
+				right: -35px;
+				position: absolute;
+				background-repeat: no-repeat;
+				background-image: url(../img/icon/left-arrow.svg);
+			}
+		}
+	}
+}

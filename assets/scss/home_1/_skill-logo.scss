@@ -1,0 +1,39 @@
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.bi-skill-logo-content {
+	padding: 70px 0px;
+	border-bottom: 1px solid #4b4b4b;
+}
+.bi-skill-logo-play {
+	max-width: 115px;
+	margin-right: 25px;
+	animation: spin 10s linear infinite;
+}
+.bi-skill-logo-text {
+	max-width: 260px;
+	h2 {
+		color: #fff;
+		font-size: 40px;
+		font-weight: 700;
+	}
+}
+.bi-skill-logo-wrapper {
+	padding-left: 40px;
+}
+.bi-skill-logo-item {
+	height: 46px;
+	width: 130px;
+	display: flex;
+	padding: 15px;
+	margin: 10px 13px;
+	border-radius: 30px;
+	align-items: center;
+	justify-content: center;
+	background-color: #fff;
+}

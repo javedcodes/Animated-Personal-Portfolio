@@ -1,0 +1,227 @@
+
+@use '../abstracts/mixins' as *;
+@use '../abstracts/variables' as *;
+
+.hpt-choose-2 {
+    &-area {
+        position: relative;
+        @media #{$lg,$md,$xs} {
+            background-color: #fff;
+            padding-bottom: 120px;
+        }
+        &::after {
+            position: absolute;
+            content: "";
+            right: 0;
+            bottom: 0;
+            width: 70%;
+            height: 100%;
+            background-color: #fff;
+            @media #{$lg,$md,$xs} {
+                display: none;
+            }
+        }
+        &::before {
+            position: absolute;
+            content: "";
+            right: 0;
+            bottom: 0;
+            width: 22px;
+            height: 430px;
+            background: var(--linear, linear-gradient(90deg, #B60B0B 0%, #FF3838 100%));
+            z-index: 1;
+            @media #{$xs} {
+                display: none;
+            }
+            @media #{$sm} {
+               display: inline-block;
+            }
+        }
+    }
+    &-wrap {
+        display: grid;
+        grid-template-columns: 640px 1fr;
+        gap: 58px;
+        position: relative;
+        z-index: 1;
+        @media #{$xl} {
+            grid-template-columns: 500px 1fr;
+        }
+        @media #{$lg,$md,$xs} {
+            grid-template-columns: 1fr;
+        }
+    }
+    &-img-wrap {
+        position: relative;
+        .img {
+            width: 100%;
+            height: 854px;
+            overflow: hidden;
+            @media #{$xl} {
+                height: 890px;
+            }
+            @media #{$xs} {
+                height: 450px;
+            }
+            @media #{$sm} {
+                height: 600px;
+            }
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+        .img-content-wrap {
+            position: absolute;
+            top: 0;
+            left: 0;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            height: 100%;
+            width: 100%;
+            .img-content {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 30px;
+                position: relative;
+                background: var(--linear, linear-gradient(90deg, #B60B0B 0%, #FF3838 100%));
+                h4 {
+                    font-size: 44px;
+                    line-height: 1.22;
+                    color: #fff;
+                    margin-bottom: 0;
+                    font-family: $kanit;
+                    font-weight: 500;
+                    @media #{$xl} {
+                        font-size: 32px;
+                    }
+                    @media #{$xs} {
+                        font-size: 16px;
+                    }
+                    @media #{$sm} {
+                        font-size: 28px;
+                    }
+                }
+                .icon {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                }
+            }
+            .img-content.rb-border {
+                border-right: 1px solid #fff;
+                border-bottom: 1px solid #fff;
+            }
+            .animate-div.lt-border {
+                border-top: 1px solid #fff;
+                border-left: 1px solid #fff;
+            }
+        }
+    }
+    &-content {
+        padding-top: 35px;
+    }
+    &-feature {
+        border-bottom: 1px solid rgb(0 0 0 / 15%);
+        padding-bottom: 50px;
+        &-item {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            @media #{$xs} {
+                flex-wrap: wrap;
+            }
+            @media #{$sm} {
+                flex-wrap: nowrap;
+            }
+            .icon {
+                flex: 0 0 auto;
+                width: 96px;
+                height: 96px;
+                text-align: center;
+                line-height: 96px;
+                background-color: rgb(182 11 11 / 20%);
+                border-radius: 50%;
+                position: relative;
+                &::after {
+                    position: absolute;
+                    content: "";
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 50%;
+                    border: 1px solid #B60B0B;
+                    border-style: dashed;
+                    left: 0;
+                    top: 0;
+                    animation: choose-2-f-item 5s infinite;
+                }
+            }
+            .content {
+                width: 100%;
+                max-width: 515px;
+                .title {
+                    font-family: $kanit;
+                    font-size: 24px;
+                    font-weight: 500;
+                    line-height: 1.33;
+                    border-bottom: 1px solid #00071A;
+                    border-style: dashed;
+                    border-top: none;
+                    border-left: none;
+                    border-right: 0;
+                    padding-bottom: 10px;
+                    margin-bottom: 10px;
+                    @media #{$xs} {
+                        font-size: 22px;
+                    }
+                    @media #{$sm} {
+                        font-size: 24px;
+                    }
+                }
+                .text {
+                    font-size: 16px;
+                    font-weight: 400;
+                    color: #4D515F;
+                    line-height: 26px;
+                    margin-bottom: 0;
+                    max-width: 465px;
+                }
+            }
+        }
+    }
+    &-btn-wrap {
+        display: flex;
+        align-items: center;
+        gap: 65px;
+        @media #{$xs} {
+            gap: 40px;
+            flex-wrap: wrap;
+        }
+        .hpt-btn-3{
+            flex: 0 0 auto;
+        }
+        .call-btn-wrap {
+            display: grid;
+            grid-template-columns: 92px auto;
+            align-items: center;
+            .call-us {
+                display: inline-block;
+                color: #00071A;
+                font-size: 16px;
+                line-height: 1;
+                font-weight: 400;
+            }
+            .number {
+                font-family: $kanit;
+                font-size: 26px;
+                line-height: 1.15;
+                font-weight: 500;
+                margin-bottom: 0;
+                color: #00071A;
+            }
+        }
+    }
+}

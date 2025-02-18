@@ -1,0 +1,167 @@
+.hap-team-section {
+	z-index: 1;
+	overflow: hidden;
+	padding: 120px 0px;
+	&:before,
+	&:after { 
+		left: 0;
+		top: -70px;
+		z-index: -1;
+		content: "";
+		width: 105%;
+		height: 110px;
+		z-index: 1;
+		position: absolute;
+		background-color: #fff;
+		transform: rotate(-2deg);
+	}
+	&:after {
+		z-index: -1;
+		top: auto;
+		height: 30%;
+		bottom: -70px;
+	}
+}
+.hap-team-slider-content {
+	margin-top: 30px;
+}
+.hap-team-item {
+	margin: 0 auto;
+	max-width: 400px;
+	.team-img {
+		z-index: 1;
+		overflow: hidden;
+		border-bottom-left-radius: 180px;
+		border-bottom-right-radius: 180px;
+		&:before {
+			bottom: 0;
+			left: 0;
+			z-index: -1;
+			content: '';
+			width: 100%;
+			height: 495px;
+			position: absolute;
+			background-color: #fff;
+			border-top-left-radius: 180px;
+			border-top-right-radius: 180px;
+			border: 2px solid transparent;
+			transition: all 500ms ease;
+		}
+	}
+	.team-text {
+		left: 0;
+		right: 0;
+		bottom: 55px;
+		margin: 0 auto;
+		h3 {
+			a {
+				opacity: 0;
+				z-index: 2;
+				color: #fff;
+				font-size: 20px;
+				font-weight: 700;
+				position: relative;
+				padding: 18px 23px;
+				visibility: hidden;
+				display: inline-block;
+				border-radius: 30px;
+				background: var(--hap-gradient-color);
+				transform: translateY(-10px);
+			}
+		}
+		span {
+			opacity: 0;
+			z-index: 1;
+			color: #000000;
+			font-size: 14px;
+			margin-top: -5px;
+			padding: 14px 18px;
+			position: relative;
+			visibility: hidden;
+			display: inline-block;
+			background-color: #fff;
+			border-radius: 30px;
+			transform: translateY(10px);
+			transition: all 500ms ease;
+		}
+	}
+	&:hover {
+		.team-img {
+			&:before {
+				border: 2px solid var(--hap-base-color);
+			}
+		}
+		.team-text {
+			h3 {
+				a {
+					opacity: 1;
+					visibility: visible;
+					transform: translateY(0px);
+				}
+			}
+			span {
+				opacity: 1;
+				visibility: visible;
+				transform: translateY(0px);
+			}
+		}
+	}
+}
+.hap-carousel-arrow-next-prev {
+	.hap-slider-arrow {
+		z-index: 1;
+		top: 50%;
+		color: #000000;
+		font-size: 30px;
+		position: absolute;
+		transform: translateY(-50%);
+		&:before,
+		&:after {
+			width: 45px;
+			content: '';
+			height: 45px;
+			z-index: -1;
+			border-radius: 100%;
+			position: absolute;
+			background-color: #fff;
+			transition: all 500ms ease;
+		}
+		&:after {
+			transform: scale(0);
+			background: var(--hap-gradient-color);
+		}
+		&:hover {
+			&:after {
+				transform: scale(1.0);
+			}
+		}
+		&.hap-team-button-prev {
+			&:before,
+			&:after {
+				left: 10px;
+			}
+		}
+		&.hap-team-button-next {
+			&:before,
+			&:after {
+				right: 10px;
+			}
+		}
+	}
+}
+.hap-team-slider-content {
+	.hap-carousel-arrow-next-prev {
+		.hap-team-button-prev {
+			left: -70px;
+		}
+		.hap-team-button-next {
+			right: -70px;
+		}
+	}
+}
+.bi-team-feed-section {
+	background-color: #f7f7f7;
+	.hap-team-item {
+		margin-bottom: 40px;
+	}
+}

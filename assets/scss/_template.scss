@@ -1,0 +1,178 @@
+/*=========
+Font load
+===========*/
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Unbounded:wght@200;300;400;500;600;700;800;900&display=swap');
+@font-face {
+	font-family: 'RecoletaAlt';
+	font-style: normal;
+	font-weight: 900;
+	font-display: auto;
+	src: url("../fonts/RecoletaAlt-Black.ttf") format("truetype");
+
+}
+$inter: 'Inter', sans-serif;
+$recoleta: 'Recoleta Alt';
+$kanit: 'Kanit', sans-serif;
+
+// Responsive Variables
+$over:'(min-width: 1800px)';
+$xxxl: 'only screen and (min-width: 1600px) and (max-width: 1799px)';
+$xxl: 'only screen and (min-width: 1400px) and (max-width: 1599px)';
+$xl: 'only screen and (min-width: 1200px) and (max-width: 1399px)';
+$lg: 'only screen and (min-width: 992px) and (max-width: 1199px)';
+$md:'only screen and (min-width: 768px) and (max-width: 991px)';
+$sm: 'only screen and (min-width: 576px) and (max-width: 767px)';
+$xs:'(max-width: 767px)';
+@font-face {
+	font-family: 'RecoletaAlt';
+	font-style: normal;
+	font-weight: 800;
+	font-display: auto;
+	src: url("../fonts/RecoletaAlt-Black.ttf") format("truetype");
+
+}
+@font-face {
+	font-family: 'RecoletaAlt';
+	font-style: normal;
+	font-weight: 700;
+	font-display: auto;
+	src: url("../fonts/RecoletaAlt-Bold.ttf") format("truetype");
+
+}
+@font-face {
+	font-family: 'RecoletaAlt';
+	font-style: normal;
+	font-weight: 600;
+	font-display: auto;
+	src: url("../fonts/RecoletaAlt-SemiBold.ttf") format("truetype");
+
+}
+@font-face {
+	font-family: 'RecoletaAlt';
+	font-style: normal;
+	font-weight: 500;
+	font-display: auto;
+	src: url("../fonts/RecoletaAlt-Medium.ttf") format("truetype");
+
+}
+
+@font-face {
+	font-family: 'RecoletaAlt';
+	font-style: normal;
+	font-weight: 400;
+	font-display: auto;
+	src: url("../fonts/RecoletaAlt-Regular.ttf") format("truetype");
+
+}
+@font-face {
+	font-family: 'RecoletaAlt';
+	font-style: normal;
+	font-weight: 300;
+	font-display: auto;
+	src: url("../fonts/RecoletaAlt-Light.ttf") format("truetype");
+
+}
+@font-face {
+	font-family: 'RecoletaAlt';
+	font-style: normal;
+	font-weight: 200;
+	font-display: auto;
+	src: url("../fonts/RecoletaAlt-Thin.ttf") format("truetype");
+
+}
+%top-bottom-shape {
+	overflow: hidden;
+	position: relative;
+	border-radius: 10px;
+	img {
+		border-radius: 10px;
+	}
+	&:before,
+	&:after {
+		content: '';
+		width: 100px;
+		z-index: 2;
+		height: 50px;
+		position: absolute;
+		background-color: #fff;
+		transform: rotate(-45deg);
+	}
+	&:before {
+		top: -15px;
+		left: -50px;
+	}
+	&:after {
+		bottom: -15px;
+		right: -50px;
+	}
+}
+@keyframes Bins_animation_1 {
+	0% {
+		transform: translateX(0);
+	}
+	25% {
+		transform: translateX(-40px);
+	}
+	50% {
+		transform: translateX(0);
+	}
+	75% {
+		transform: translateX(40px);
+	}
+	100% {
+		transform: translateX(0);
+	}
+}
+@keyframes Bins_animation_2 {
+	0% {
+		transform: translateY(0);
+	}
+	25% {
+		transform: translateY(-40px);
+	}
+	50% {
+		transform: translateY(0);
+	}
+	75% {
+		transform: translateY(40px);
+	}
+	100% {
+		transform: translateY(0);
+	}
+}
+@keyframes Bins_animation_3 {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+@keyframes Bins_animation_4 {
+	0% {
+		transform: translate(-300px, 151px) rotate(0);
+	}
+	100% {
+		transform: translate(251px, -200px) rotate(180deg);
+	}
+}
+@keyframes Bins_animation_5 {
+	0% {
+		transform: translate(0, 0) rotate(0);
+	}
+	20% {
+		transform: translate(73px, -1px) rotate(36deg);
+	}
+	40% {
+		transform: translate(111px, 72px) rotate(72deg);
+	}
+	60% {
+		transform: translate(93px, 122px) rotate(108deg);
+	}
+	80% {
+		transform: translate(-70px, 72px) rotate(124deg);
+	}
+	100% {
+		transform: translate(0, 0) rotate(0);
+	}
+}

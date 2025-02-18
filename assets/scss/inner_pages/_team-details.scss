@@ -1,0 +1,148 @@
+.bi-team-details-img-social {
+	top: 110px;
+	margin-bottom: 40px;
+	position: sticky;
+	.bi-team-details-img {
+		overflow: hidden;
+		border-radius: 15px;
+		margin-bottom: 30px;
+	}
+	.bi-team-details-name-social {
+		font-family: var(--heading);
+		h3 {
+			color: #0E0E0E;
+			font-size: 40px;
+			font-weight: 700;
+			padding-bottom: 10px;
+		}
+		span {
+			font-size: 22px;
+			color: var(--base-color);
+		}
+		.bi-team-details-social {
+			margin-top: 20px;
+			a {
+				z-index: 1;
+				width: 50px;
+				height: 50px;
+				display: flex;
+				overflow: hidden;
+				margin: 0px 10px;
+				position: relative;
+				align-items: center;
+				border-radius: 100%;
+				justify-content: center;
+				color: var(--base-color);
+				border: 1px solid rgba(22, 35, 43, 0.10);
+				&:before {
+					top: 0;
+					left: 0;
+					z-index: -1;
+					width: 100%;
+					content: '';
+					height: 100%;
+					position: absolute;
+					transform: scale(0);
+					border-radius: 100%;
+					transition: all 500ms ease;
+					background: var(--gradient-color);
+				}
+				&:hover {
+					color: #fff;
+					background-color: var(--base-color);
+					border: 1px solid var(--base-color);
+					&:before {
+						transform: scale(1.0);
+					}
+				}
+			}
+		}
+	}
+}
+.bi-team-details-text-content {
+	padding-left: 20px;
+	h3 {
+		color: #0E0E0E;
+		font-size: 34px;
+		font-weight: 700;
+		padding-bottom: 20px;
+	}
+	p {
+		padding-bottom: 20px;
+	}
+	.bi-team-details-info {
+		margin-bottom: 25px;
+		li {
+			color: #0E0E0E;
+			margin-bottom: 10px;
+			font-family: var(--heading);
+		}
+		.info-title {
+			width: 125px ;
+			font-weight: 600;
+			display: inline-block;
+		}
+		.info-value {
+			color: #555555;
+			font-weight: 500;
+		}
+	}
+}
+
+.bi-team-details-contact-info {
+	margin-top: 50px;
+	border-radius: 20px;
+	background-color: rgba(247, 247, 247, 0.05);
+	.bi-team-details-contact-title {
+		h3 {
+			color: #0E0E0E;
+			font-size: 34px;
+			font-weight: 700;
+			padding-bottom: 15px;
+		}
+		p {
+			font-weight: 500;
+		}
+	}
+}
+.bi-team-details-contact-form {
+	padding: 40px;
+	margin-top: 30px;
+	border-radius: 20px;
+	border: 1px solid rgba(22, 35, 43, 0.10);
+	input,textarea {
+		width: 100%;
+		height: 62px;
+		border: none;
+		color: #555;
+		padding-left: 20px;
+		margin-bottom: 25px;
+		border-radius: 5px;
+		font-family: var(--heading);
+		background: rgba(22, 35, 43, 0.05);
+		&::placeholder {
+			font-size: 14px;
+			color: #555;
+			font-family: var(--heading);
+		}
+	}
+	textarea {
+		padding-top: 20px;
+		height: 178px;
+	}
+	button {
+		color: #fff;
+		border: none;
+		font-size: 15px;
+		font-weight: 700;
+		padding: 18px 30px;
+		border-radius: 5px;
+		text-transform: uppercase;
+		font-family: var(--heading);
+		transition: all 200ms linear 0ms;
+		background-color: var(--base-color);
+		&:hover {
+			background-color: #000000;
+		}
+	}
+}

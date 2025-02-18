@@ -1,0 +1,221 @@
+
+@use '../abstracts/mixins' as *;
+@use '../abstracts/variables' as *;
+
+.hpt-service-2 {
+  &-area {
+    position: relative;
+    .bg-shape-1 {
+      position: absolute;
+      top: -92px;
+      left: -150px;
+      width: 20%;
+      animation: rotated 10s linear infinite;
+    }
+    .bg-shape-2 {
+      position: absolute;
+      right: 0;
+      top: 0;
+      animation: updown 10s linear infinite;
+
+    }
+  }
+  &-section-title {
+    .scetion-title-2 {
+      br {
+        @media #{$md,$xs} {
+          display: none;
+        }
+      }
+    }
+  }
+  &-content-wrap {
+    display: grid;
+    grid-template-columns: 326px 1fr 1fr;
+    gap: 53px;
+    @media #{$lg} {
+      grid-template-columns: 250px 1fr 1fr;
+      gap: 30px;
+    }
+    @media #{$md} {
+      grid-template-columns: 1fr 1.5fr;
+    }
+    @media #{$xs} {
+      grid-template-columns: 1fr;
+    }
+  }
+  &-content {
+    padding-top: 35px;
+    position: relative;
+    @media #{$md,$xs} {
+      padding-top: 0;
+      grid-column: 1 / -1;
+    }
+    > .icon {
+      position: relative;
+      width: 78px;
+      height: 78px;
+      display: inline-block;
+      background-color: rgb(182 11 11 / 10%);
+      text-align: center;
+      line-height: 78px;
+      border-radius: 50%;
+      &::after {
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        border: 1px solid #B60B0B;
+        border-style: dashed;
+        left: 0;
+        top: 0;
+        animation: choose-2-f-item 5s infinite;
+      }
+    }
+    .text {
+      font-size: 18px;
+      color: #00071A;
+      opacity: 1;
+      line-height: 1.66;
+      font-weight: 500;
+    }
+    .service-feature {
+      li {
+        font-size: 18px;
+        font-weight: 400;
+        color: #00071A;
+        line-height: 1.33;
+
+        &:not(:last-child) {
+          margin-bottom: 10px;
+        }
+
+        .icon {
+          display: inline-block;
+          margin-top: -4px;
+        }
+      }
+    }
+    .btn-wrap {
+      position: absolute;
+      bottom: 50px;
+      left: -170px;
+      display: inline-block;
+      height: auto;
+      border-radius: 100px;
+      border: 6px solid #fff;
+      height: 72px;
+      @media #{$lg} {
+        bottom: 30px;
+      }
+      @media #{$md,$xs} {
+        position: unset;
+      }
+    }
+  }
+}
+
+.hpt-service-2-tabs  {
+  padding-top: 50px;
+  @media #{$xs} {
+    padding-top: 0;
+  }
+  &-menu {
+    display: block;
+    .nav-link {
+      position: relative;
+      display: block;
+      padding: 0;
+      margin: 0;
+      font-family: $kanit;
+      font-size: 30px;
+      font-weight: 500;
+      color: #00071A;
+      line-height: 1.33;
+      text-transform: capitalize;
+      padding-bottom: 23px;
+      text-align: left;
+
+      @media #{$lg} {
+        font-size: 24px;
+      }
+      @media #{$md} {
+        font-size: 28px;
+      }
+      @media #{$xs} {
+        font-size: 22px;
+        width: 100%;
+      }
+      &:not(:last-child) {
+        margin-bottom: 15px;
+
+      }
+
+      .icon {
+        position: absolute;
+        right: 0;
+        top: 40%;
+        transform: translateY(-50%);
+        opacity: 0;
+      }
+
+      &::after {
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 2px;
+        background-color: #00071A;
+        left: 0;
+        bottom: 0;
+        opacity: .1;
+      }
+
+      &::before {
+        position: absolute;
+        content: "";
+        width: 0%;
+        height: 2px;
+        background: var(--linear, linear-gradient(90deg, #B60B0B 0%, #FF3838 100%));
+        left: auto;
+        right: 0;
+        bottom: 0;
+        @include transition(.4s);
+      }
+
+      &:is(.active){
+        background: var(--linear, linear-gradient(90deg, #B60B0B 0%, #FF3838 100%));
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+
+        .icon {
+          opacity: 1;
+          right: -135px;
+          @media #{$xs} {
+            display: none;
+          }
+        }
+
+        &::before {
+          left: 0;
+          right: auto;
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  &-content {
+    .tab-pane {
+      height: 585px;
+      width: 100%;
+      overflow: hidden;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+}

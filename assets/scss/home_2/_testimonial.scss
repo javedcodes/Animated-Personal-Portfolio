@@ -1,0 +1,140 @@
+.bi-testimonial-section-2 {
+	.background_parallax {
+		padding: 120px 0px;
+	}
+}
+
+.bi-testimonial-thumb {
+	top: 90px;
+	z-index: 2;
+	left: -130px;
+	width: 190px;
+	text-align: right;
+}
+.bi-testimonial-nav {
+	height: 305px;
+	.bi-testimonial-nav-item {
+		position: relative;
+		transition: all 500ms ease;
+		img {
+			width: 90px;
+			height: 90px;
+			cursor: pointer;
+			border-radius: 100%;
+			border: 5px solid #fff;
+			transition: all 500ms ease;
+		}
+		&:before {
+			top: 45px;
+			height: 1px;
+			content: '';
+			width: 0px;
+			right: -70px;
+			position: absolute;
+			transition: all 700ms ease;
+			background-color: var(--base-color);
+		}
+	}
+	.swiper-slide-active { 
+		.bi-testimonial-nav-item {
+			transform: translateX(-90px);
+			&:before {
+				width: 57px;
+				transition-delay: .4s;
+			}
+			img {
+				border: 5px solid var(--base-color);
+			}
+		}
+	}
+}
+.bi-testimonial-item-2 {
+	.bi-testimonial-img {
+		opacity: 0;
+		width: 493px;
+		height: 493px;
+		overflow: hidden;
+		margin-right: 50px;
+		visibility: hidden;
+		border-radius: 100%;
+		transition: all 800ms ease;
+		transform: scale(.5);
+	}
+	.bi-testimonial-text {
+		max-width: 540px;
+		.testimonial-quote {
+			opacity: 0;
+			visibility: hidden;
+			transition: all 500ms ease;
+			transform: translateX(30px);
+		}
+		.testimonial-desc {
+			opacity: 0;
+			font-size: 21px;
+			font-weight: 400;
+			visibility: hidden;
+			margin: 25px 0px 33px;
+			transition: all 500ms ease;
+			transform: translateX(30px);
+		}
+		.testimonial-author {
+			h3 {
+				opacity: 0;
+				color: #fff;
+				font-size: 25px;
+				font-weight: 700;
+				visibility: hidden;
+				padding-bottom: 5px;
+				transition: all 500ms ease;
+				transform: translateX(30px);
+			}
+			span {
+				opacity: 0;
+				display: block;
+				font-size: 15px;
+				font-weight: 400;
+				visibility: hidden;
+				color: var(--base-color);
+				transition: all 500ms ease;
+				transform: translateX(30px);
+			}
+		}
+	}
+}
+.bi-testimonial-slider-for {
+	.swiper-slide-active {
+		.bi-testimonial-img {
+			opacity: 1;
+			visibility: visible;
+			transform: scale(1.0);
+		}
+		.bi-testimonial-text {
+			.testimonial-quote {
+				opacity: 1;
+				visibility: visible;
+				transform: translateX(0px);
+				transition-delay: .2s;
+			}
+			.testimonial-desc {
+				opacity: 1;
+				visibility: visible;
+				transform: translateX(0px);
+				transition-delay: .4s;
+			}
+			.testimonial-author {
+				h3 {
+					opacity: 1;
+					visibility: visible;
+					transform: translateX(0px);
+					transition-delay: .6s;
+				}
+				span {
+					opacity: 1;
+					visibility: visible;
+					transform: translateX(0px);
+					transition-delay: .8s;
+				}
+			}
+		}
+	}
+}

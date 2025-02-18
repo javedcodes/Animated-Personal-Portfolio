@@ -1,0 +1,80 @@
+@use '../abstracts/mixins' as *;
+@use '../abstracts/variables' as *;
+
+.hpt-marquee-2 {
+    &-wrap {
+        overflow: hidden;
+        padding-top: 35px;
+        padding-bottom: 35px;
+        @media #{$md,$xs} {
+            padding-top: 0px;
+            padding-bottom: 0px;
+        }
+    }
+    &-content-1 {
+        &-bg {
+            background: var(--linear, linear-gradient(90deg, #B60B0B 0%, #FF3838 100%));
+            rotate: 2deg;
+            width: 100%;
+            padding: 32px 0;
+            animation: marquee-zindex-2 20s linear infinite;
+        }
+        &-item {
+            display: flex;
+            justify-content: flex-start;
+            gap: 30px;
+            @include transition(.4s);
+            animation: marquee-animation-2 20s linear infinite;
+            .text {
+                flex: 0 0 auto;
+                white-space: nowrap;
+                font-family: $kanit;
+                font-size: 36px;
+                font-weight: 500;
+                text-transform: uppercase;
+                line-height: 1;
+                margin-bottom: 0;
+                color: #fff;
+                .icon {
+                    margin-right: 5px;
+                    margin-top: -15px;
+                }
+            }
+        }
+    }
+
+    &-content-2 {
+
+        &-bg {
+            background-color: var(--clr-common-white);
+            padding: 28px 0;
+            rotate: -2deg;
+            margin-top: -92px;
+            overflow: hidden;
+        }
+        &-item {
+            display: flex;
+            justify-content: flex-start;
+            gap: 30px;
+            animation: marquee-right-animation-2 20s linear infinite;
+            .text {
+                flex: 0 0 auto;
+                white-space: nowrap;
+                font-family: $kanit;
+                font-size: 36px;
+                font-weight: 500;
+                text-transform: uppercase;
+                line-height: 1;
+                margin-bottom: 0;
+                background: var(--linear, linear-gradient(90deg, #B60B0B 0%, #FF3838 100%));
+                background-clip: text;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                .icon {
+                    margin-right: 5px;
+                    margin-top: -15px;
+                }
+            }
+        }
+    }
+}

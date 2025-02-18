@@ -1,0 +1,21 @@
+.bi-video-play-content-2 {
+	padding: 285px 0px 205px;
+	.video-play-text {
+		margin-top: 30px;
+		h3 {
+			font-size: 50px;
+			font-weight: 700;
+			span {
+				font-weight: 200;
+				display: block;
+			}
+		}
+	}
+}
+.bi-video-play-content-2 {
+	text-align: center ;
+	.video-play-logo {
+		display: inline-block;
+		animation: spin 10s linear infinite;
+	}
+}

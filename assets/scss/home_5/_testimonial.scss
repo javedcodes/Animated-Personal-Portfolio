@@ -1,0 +1,144 @@
+.hap-testimonial-section {
+	z-index: 1;
+	overflow: hidden;
+	padding: 140px 0px;
+	background-color: #f2f4f4;
+	&:before,
+	&:after { 
+		left: 0;
+		top: -70px;
+		z-index: -1;
+		content: "";
+		width: 105%;
+		height: 110px;
+		z-index: 1;
+		position: absolute;
+		background-color: #fff;
+		transform: rotate(-2deg);
+	}
+	&:after {
+		z-index: -1;
+		top: auto;
+		bottom: -70px;
+	}
+}
+.hap-testimonial-item {
+	overflow: hidden;
+	.testimoial-img {
+		z-index: 2;
+		width: 168px;
+		height: 168px;
+		margin-right: 15px;
+		&:before {
+			top: 50%;
+			width: 0px;
+			content: '';
+			height: 2px;
+			right: -42px;
+			position: absolute;
+			transform: translateY(-50%);
+			background: var(--hap-gradient-color);
+			transition: all 500ms ease;
+		}
+		&:after {
+			left: 3px;
+			top: 0px;
+			width: 97%;
+			z-index: -1;
+			opacity: 0;
+			content: '';
+			height: 109%;
+			position: absolute;
+			visibility: visible;
+			border-radius: 400px;
+			background: var(--hap-gradient-color);
+			transition: all 800ms ease;
+		}
+		img {
+			border-radius: 100%;
+		}
+	}
+	.testimoial-text-author {
+		z-index: 1;
+		max-width: 810px;
+		padding: 80px 125px;
+		border-radius: 400px;
+		&:before,
+		&:after {
+			top: 0;
+			left: 0;
+			z-index: -1;
+			width: 100%;
+			content: '';
+			height: 100%;
+			position: absolute;
+			border-radius: 400px;
+			background: var(--hap-gradient-color);
+		}
+		&:after {
+			background-color: #fff;
+			box-shadow: 0px 9px 68px 0px rgba(0, 0, 0, 0.06);
+			background-image: url(../img/home_5/bg/tst-item-bg.png);
+			transition: all 700ms ease;
+		}
+		.testimonial-desc {
+			color: #0d0d0d;
+			font-size: 24px;
+			margin-bottom: 28px;
+		}
+		.testimonial-author {
+			h3 {
+				font-size: 20px;
+				font-weight: 700;
+				padding-bottom: 5px;
+				color: var(--hap-base-color);
+			}
+		}
+	}
+}
+.hap-testimonial-slider {
+	margin: 0 auto;
+	max-width: 995px;
+	.swiper-slide-active {
+		.hap-testimonial-item {
+			.testimoial-img {
+				&:before {
+					width: 65px;
+					transition-delay: 1s;
+				}
+				&:after {
+					top: -7px;
+					opacity: 1;
+					visibility: visible;
+					transition-delay: .7s;
+				}
+			}
+			.testimoial-text-author {
+				&:after {
+					transition-delay: .5s;
+					transform: rotate(-4.5deg);
+				}
+			}
+		}
+	}
+}
+.hap-testimonial-content {
+	.hap-testimonial-button-prev {
+		left: 15px;
+	}
+	.hap-testimonial-button-next {
+		right: 15px;
+	}
+	.hap-testimonial-button-prev {
+		&:before,
+		&:after {
+			left: 10px;
+		}
+	}
+	.hap-testimonial-button-next {
+		&:before,
+		&:after {
+			right: 10px;
+		}
+	}
+}

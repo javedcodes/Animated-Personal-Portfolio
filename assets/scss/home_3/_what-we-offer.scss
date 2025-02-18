@@ -1,0 +1,117 @@
+.bi-what-we-offer-section {
+	z-index: 1;
+	overflow: hidden;
+	padding: 165px 0px 130px;
+	.bi-shape-anim {
+		z-index: -1;
+		&.anim_1 {
+			top: 170px;
+			left: -50px;
+			animation: Bins_animation_1 8s infinite linear alternate;
+		}
+		&.anim_2 {
+			top: 200px;
+			right: -70px;
+			animation: Bins_animation_3 8s infinite linear alternate;
+		}
+		&.anim_3 {
+			left: -100px;
+			bottom: 100px;
+		}
+		&.anim_4 {
+			top: 50%;
+			right: 50px;
+		}
+	}
+}
+.bi-what-we-offer-top-content {
+	padding-bottom: 55px ;
+	border-bottom: 1px solid #312f30;
+	.bi-section-title-3 {
+		max-width: 745px;
+	}
+	.bi-btn-3 {
+		margin: 20px 0px;
+	}
+}
+.bi-what-we-offer-item  {
+	padding: 30px 0px;
+	border-bottom: 1px solid #312f30;
+	.bi-what-we-offer-img-title {
+		max-width: 500px;
+		.offer-img {
+			width: 162px;
+			height: 162px;
+			overflow: hidden;
+			margin-right: 40px;
+			border-radius: 100%;
+			transition: all 500ms ease;
+			border: 3px solid transparent;
+			img {
+				transition: all 500ms ease;
+			}
+		}
+		.offer-title {
+			max-width: 295px;
+			h3 {
+				color: #fff;
+				font-size: 32px;
+				font-weight: 700;
+				line-height: 46px;
+				a {
+					width: 100%;
+					display: inline !important;
+					background-position-y: -1px;
+					background-repeat: no-repeat;
+					background-size: 0 100%;
+					backface-visibility: hidden;
+					-webkit-backface-visibility: hidden;
+					background-image: linear-gradient(transparent calc(100% - 1px), currentColor 1px);
+					-webkit-transition: 0.6s cubic-bezier(0.215, 0.61, 0.355, 1);
+					transition: 0.6s cubic-bezier(0.215, 0.61, 0.355, 1);	
+				}
+			}
+		}
+	}
+	.bi-what-we-offer-desc {
+		max-width: 470px;
+		transition: all 500ms ease;
+		color: rgba(255, 255, 255, 0.7);
+	}
+	.offer-btn {
+		a {
+			color: #fff;
+			font-weight: 700;
+			padding: 14px 30px;
+			border-radius: 5px;
+			display: inline-block;
+			font-family: var(--heading);
+			border: 1px solid var(--base-color);
+			&:hover {
+				color: #fff;
+				background-color: var(--base-color);
+			}
+		}
+	}
+	&:hover {
+		.bi-what-we-offer-img-title {
+			.offer-img {
+				border: 3px solid var(--base-color);
+				img {
+					transform: scale(1.04);
+				}
+			}
+			.offer-title  {
+				h3 {
+					a {
+						color: var(--base-color);
+						background-size: 100% 100%;
+					}
+				}
+			}
+		}
+		.bi-what-we-offer-desc {
+			color: rgba(255, 255, 255, 1);
+		}
+	}
+}

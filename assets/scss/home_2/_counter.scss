@@ -1,0 +1,39 @@
+.bi-counter-section-3 {
+	padding-bottom: 135px;
+}
+.bi-counter-item-3 {
+	max-width: 370px;
+	&:after {
+		top: 20%;
+		left: 50%;
+		content: '';
+		width: 1px;
+		height: 50px;
+		position: absolute;
+		transform: translate(-50%) rotate(-45deg);
+		background: var(--base-color);
+	}
+	&:before {
+		top: 40%;
+		left: 50%;
+		width: 1px;
+		content: '';
+		opacity: .5;
+		height: 16px;
+		position: absolute;
+		transform: translate(-50%) rotate(45deg);
+		background: var(--base-color);
+	}
+	h3 {
+		color: #fff;
+		font-size: 60px;
+		font-weight: 700;
+	}
+	p {
+		color: #fff;
+		font-size: 18px;
+		font-weight: 700;
+		max-width: 135px;
+		line-height: 1.2;
+	}
+}

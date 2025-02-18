@@ -1,0 +1,73 @@
+.hap-portfolio-section {
+	overflow: hidden;
+	padding: 120px 0px;
+}
+.hap-portfolio-content {
+	padding-top: 40px;
+}
+.hap-portfolio-item {
+	margin: 0 auto;
+	margin-bottom: 20px;
+	.project-img {
+		overflow: hidden;
+		border-radius: 10px;
+		img {
+			width: 100%;
+			overflow: hidden;
+			border-radius: 10px;
+			transition: all 500ms ease;
+		}
+	}
+	.project-text {
+		margin-top: -6px;
+		h3 {
+			a {
+				z-index: 1;
+				color: #000000;
+				display: block;
+				font-size: 21px;
+				font-weight: 700;
+				position: relative;
+				padding: 23px 0px 20px;
+				i {
+					transform: rotate(-45deg);
+					transition: all 100ms ease;
+				}
+				&:before {
+					top: 0;
+					left: 0;
+					z-index: -1;
+					content: '';
+					height: 0%;
+					width: 100%;
+					position: absolute;
+					transition: all 500ms ease;
+					border-bottom-left-radius: 10px;
+					border-bottom-right-radius: 10px;
+					background: var(--hap-gradient-color);
+				}
+			}
+		}
+	}
+	&:hover {
+		.project-text {
+			h3 {
+				a {
+					color: #fff;
+					padding: 23px 30px 20px;
+					&:before {
+						height: 100%;
+					}
+					i {
+						transform: rotate(0deg);
+					}
+				}
+			}
+		}
+		.project-img  {
+			img {
+				transform: scale(1.05);
+			}
+		}
+	}
+}

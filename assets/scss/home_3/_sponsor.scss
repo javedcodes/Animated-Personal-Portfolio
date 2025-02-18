@@ -1,0 +1,19 @@
+.bi-sponsor-section-3 {
+	z-index: 1;
+	padding-top: 120px;
+	.sponsor-bg {
+		z-index: -1;
+		top: -150px;
+	}
+}
+.bi-sponsor-slider-3 {
+	padding: 70px 0px;
+	border-top: 1.5px dashed var(--base-color);
+	border-bottom: 1.5px dashed var(--base-color);
+	.slider-img {
+		height: 80px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+}

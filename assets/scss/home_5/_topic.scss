@@ -1,0 +1,33 @@
+.hap-topic-section {
+	overflow: hidden;
+	padding: 120px 0px;
+	.hap-section-title {
+		max-width: 850px;
+	}
+}
+.hap-topic-content {
+	padding-top: 45px;
+}
+.hap-topic-item {
+	width: 188px;
+	height: 235px;
+	margin: 0px 15px;
+	padding: 45px 15px;
+	border-radius: 100px;
+	border: 2px solid #efefef;
+	transition: all 500ms ease;
+	.inner-img {
+		margin-bottom: 20px;
+	}
+	.inner-text {
+		a {
+			font-size: 20px;
+			font-weight: 700;
+			display: inline-block;
+			@extend%gradient-text;
+		}
+	}
+	&:hover {
+		transform: translateY(-10px);
+	}
+}

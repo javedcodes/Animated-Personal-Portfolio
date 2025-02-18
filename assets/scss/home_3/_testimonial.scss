@@ -1,0 +1,114 @@
+.bi-testimonial-section-3 {
+	overflow: hidden;
+	padding: 130px 0px;
+	.bi-section-title-3 {
+		margin: 0 auto;
+		max-width: 710px;
+	}
+	.bi-shape-anim {
+		&.anim_1 {
+			top: 150px;
+			left: -50px;
+			animation: Bins_animation_1 8s infinite linear alternate;
+		}
+	}
+}
+.bi-testimonial-item-3 {
+	width: 100%;
+	overflow: hidden;
+	max-width: 625px;
+	padding: 45px 40px;
+	border-radius: 10px;
+	background-color: rgba(17, 19, 24, 1);
+	.quote-icon {
+		top: 35px;
+		right: 35px;
+	}
+	.testimonial-img {
+		bottom: -75px;
+		right: -45px;
+		width: 250px;
+		height: 250px;
+		overflow: hidden;
+		border-radius: 100%;
+		border: 2px solid var(--base-color);
+	}
+	.testimonial-text {
+		color: #fff;
+		font-size: 24px;
+		font-weight: 600;
+		max-width: 415px;
+		line-height: 40px;
+		padding-bottom: 40px;
+		font-family: var(--heading);
+	}
+	.testimonial-author {
+		h3 {
+			font-size: 24px;
+			font-weight: 600;
+			padding-bottom: 10px;
+			color: var(--base-color);
+		}
+		span {
+			font-weight: 600;
+		}
+	}
+}
+.bi-testimonial-content-3 {
+	margin: 0 auto;
+	padding-top: 55px;
+	max-width: 1920px;
+	.testimonial-circle {
+		top: -55px;
+		right: -80px;
+		width: 665px;
+		height: 665px;
+		border-radius: 100%;
+		border: 65px solid var(--base-color);
+	}
+	.bi-testimonial-slider-3 {
+		margin: 0 -330px 0 0;
+		max-width: 1920px;
+	}
+}
+// .bi-testimonial-slider-3 {
+// 	.swiper-slide {
+// 		opacity: .2;
+// 		transition: all 500ms ease;
+// 		&.swiper-slide-prev,
+// 		&.swiper-slide-active,
+// 		&.swiper-slide-next {
+// 			opacity: 1;
+// 		}
+// 	}
+// }
+.bins-dot-carousel {
+	margin-top: 70px;
+	.swiper-pagination-bullet {
+		width: 20px;
+		opacity: 1;
+		height: 20px;
+		position: relative;
+		border-radius: 100%;
+		background-color: #390f10;
+		margin: 0px 14px;
+		&:before {
+			top: -8px;
+			left: -9px;
+			width: 37px;
+			content: '';
+			height: 37px;
+			position: absolute;
+			transform: scale(0);
+			border-radius: 100%;
+			transition: all 500ms ease;
+			border: 2px solid var(--base-color);
+		}
+		&.swiper-pagination-bullet-active {
+			background-color: var(--base-color);
+			&:before {
+				transform: scale(1.0);
+			}
+		}
+	}
+}

@@ -1,0 +1,23 @@
+.bi-job-apply-section {
+	.bi-team-details-contact-info {
+		margin: 0 auto;
+		margin-top: 50px;
+		max-width: 1010px;
+	}
+	.bi-team-details-contact-form {
+		.upload-cv {
+			h3 {
+				font-size: 22px;
+				font-weight: 700;
+				padding-bottom: 15px;
+			}
+			input {
+				width: inherit;
+				padding-left: 0;
+				border-radius: 0;
+				margin-bottom: 0;
+				background-color: transparent;
+			}
+		}
+	}
+}

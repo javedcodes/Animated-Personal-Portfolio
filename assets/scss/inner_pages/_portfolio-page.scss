@@ -1,0 +1,34 @@
+.bi-portfolio-feed-top-content {
+	.bi-section-title-3 h2 {
+		color: #0E0E0E;
+	}
+	.bi-portfolio-filter-btn li {
+		font-size: 14px;
+	}
+}
+.bi-portfolio-feed-section {
+	.bi-portfolio-feed-item-wrapper {
+		margin: 50px -15px;
+	}
+	.bi-portfolio-item-3 {
+		padding: 15px;
+	}
+	.bi-portfolio-img-text-3 .portfolio-img img {
+		filter: grayscale(0);
+	}
+	.bi-portfolio-img-text-3 .porfolio-icon {
+		width: 70px;
+		height: 70px;
+		font-size: 24px;
+	}
+	.bi-portfolio-img-text-3:hover .porfolio-icon {
+		top: 40%;
+	}
+	.bi-portfolio-img-text-3 .portfolio-text {
+		padding: 20px 30px;
+	}
+}
+.bi-portfolio-sidebar {
+	top: 110px;
+	position: sticky;
+}

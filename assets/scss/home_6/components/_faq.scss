@@ -1,0 +1,286 @@
+@use '../abstracts/mixins' as *;
+@use '../abstracts/variables' as *;
+
+.hpt-faq-1{
+    &-area {
+        position: relative;
+        background-color: rgb(0 7 26 / .03);
+        .faq-1-bg-shape-1 {
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+    }
+    &-wrap {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 70px;
+        align-items: center;
+        @media #{$xl,$lg,$md,$xs} {     
+            grid-template-columns: 1fr;
+        }
+    }
+    &-section-title {
+        .hpt-title-1 {
+            margin-bottom: 25px;
+        }
+
+    }
+    &-img {
+        width: 100%;
+        height: 100%;
+        @media #{$xl} {     
+            width: 70%;
+        }
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+    }
+    &-left {
+        height: 100%;
+        width: 100%;
+    }
+    &-right {
+        width: 100%;
+        max-width: 626px;
+        @media #{$xxl} {     
+            padding-top: 120px;
+            padding-bottom: 120px;
+
+        }
+        @media #{$xl,$lg,$md} {    
+            max-width: 100%;
+            padding-left: 35px;
+            padding-right: 35px;
+            padding-top: 0px;
+            padding-bottom: 120px;
+        }
+        @media #{$xs} {    
+            max-width: 100%;
+            padding-left: 15px;
+            padding-right: 15px;
+            padding-top: 0px;
+            padding-bottom: 120px;
+        }
+        @media #{$sm} {    
+            max-width: 100%;
+            padding-left: 35px;
+            padding-right: 35px;
+            padding-top: 0px;
+            padding-bottom: 120px;
+        }
+    }
+}
+
+.hpt-faq-1-item-wrap {
+    .accordion-item {
+        position: relative;
+        background: transparent;
+        border: none;
+        &::after {
+            position: absolute;
+            content: "";
+            width: 100%;
+            height: 0%;
+            top: 0;
+            left: 0;
+            opacity: .3;
+            background: var(--linear, linear-gradient(90deg, #E02626 0%, #F0831F 100%));
+            @include transition(.3s);
+        }
+        &:is(.faq_bg) {
+            &::after {
+                height: 100%;
+            }
+            .accordion-header {
+                .accordion-button {
+                    padding-left: 15px;
+                    padding-right: 15px;
+                }
+            }
+            .line {
+                background: var(--linear, linear-gradient(90deg, #E02626 0%, #F0831F 100%));
+            
+            }
+        }
+        .line {
+            display: block;
+            width: 100%;
+            height: 1px;
+            background: var(--919191, #919191);
+        }
+        .accordion-header {
+            outline: none;
+            box-shadow: none;
+            position: relative;
+            z-index: 1;
+            .accordion-button {
+                padding-right: 0;
+                padding-left: 0;
+                justify-content: space-between;
+                align-items: center;
+                background: transparent;
+                outline: none;
+                box-shadow: none;
+                @include transition(.3s);
+                .text {
+                    font-size: 23px;
+                    font-family: $recoleta;
+                    font-weight: 700;
+                    color: #00071A;
+                    line-height: 1.55;
+                }
+                .icon {
+                    flex: 0 0 auto;
+                    width: 18px;
+                    height: 18px;
+                    border-radius: 50%;
+                    background: var(--linear, linear-gradient(90deg, #E02626 0%, #F0831F 100%));
+                    text-align: center;
+                    font-size: 11px;
+                    line-height: 19px;
+                    color: #fff;
+                }
+                &::after {
+                    display: none;
+                }
+
+            }
+        }
+        .accordion-body  {
+            position: relative;
+            z-index: 1;
+            padding-top: 0;
+            .faq-text {
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 26px;
+                color: #00071A;
+                margin-bottom: 0;
+                opacity: .8;
+            }
+        }
+    }   
+}
+
+// home-2 
+
+.hpt-faq-2 {
+    background: transparent;
+    .faq-1-bg-shape-1 {
+        position: absolute;
+        left: -120px;
+        bottom: -100px;
+        top: unset;
+        animation: rotated 10s linear infinite;
+    }
+    .hpt-faq-1-right {
+        width: 100%;
+        max-width: 100%;
+        padding-left: 50px;
+        position: relative;
+        @media #{$xxl,$xl} {
+            padding-top: 0px;
+            padding-bottom: 0px;
+            padding-right: 0;
+        }
+        @media #{$lg,$md,$xs} {
+            padding-top: 50px;
+            padding-bottom: 0px;
+            padding-right: 0;
+            padding-left: 0;
+        }
+        .faq-2-img-bg {
+            position: absolute;
+            top: 20px;
+            right: -20px;
+            z-index: -1;
+            @media #{$xl,$lg,$md,$xs} {
+                display: none;
+            }
+        }
+    }
+    .hpt-faq-1-img {
+        clip-path: polygon(18% 0, 100% 0, 100% 84%, 82% 100%, 0 100%, 0 16%);
+        width: 100%;
+        height: 740px;
+        overflow: hidden;
+        @media #{$xs} {
+            height: 450px;
+        }
+        @media #{$sm} {
+            height: 600px;
+        }
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+    }
+
+    .hpt-faq-1-item-wrap {
+        .accordion-item {
+            .accordion-header {
+                .accordion-button {
+                    .text {
+                        font-size: 22px;
+                        font-family: $kanit;
+                        font-weight: 500;
+                    }
+                    .icon {
+                        position: relative;
+                        background: var(--Linear, linear-gradient(90deg, #B60B0B 0%, #FF3838 100%));
+                        background-clip: text;
+                        -webkit-background-clip: text;
+                        -webkit-text-fill-color: transparent;
+                        &::after {
+                            position: absolute;
+                            content: "";
+                            width: 100%;
+                            height: 100%;
+                            border-radius: 50%;
+                            background: var(--Linear, linear-gradient(90deg, #B60B0B 0%, #FF3838 100%));
+                            left: 0;
+                            top: 0;
+                            z-index: -1;
+                            opacity: .2;
+                            @include transition(.4s);
+                        }
+                    }
+                }
+            }
+            &:is(.faq_bg) {
+                .accordion-header {
+                    .accordion-button {
+                        .text {
+                            background: var(--Linear, linear-gradient(90deg, #B60B0B 0%, #FF3838 100%));
+                            background-clip: text;
+                            -webkit-background-clip: text;
+                            -webkit-text-fill-color: transparent;
+                        }
+                        .icon {
+                            position: relative;
+                            background: unset;
+                            background-clip: unset;
+                            -webkit-background-clip: unset;
+                            -webkit-text-fill-color: unset;
+                            color: #fff;
+                            &::after {
+                                opacity: 1;
+                            }
+                            i {
+                                &::before {
+                                    content: "\f068";
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

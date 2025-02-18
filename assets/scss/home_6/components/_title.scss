@@ -1,0 +1,122 @@
+@use '../abstracts/mixins' as *;
+@use '../abstracts/variables' as *;
+
+// subtitle-1
+.hpt-subtitle-1{
+  &-wrap {
+    display: inline-block;
+    border-radius: 3px;
+    background: linear-gradient(90deg, rgba(224, 38, 38, 0.10) 0%, rgba(240, 131, 31, 0.10) 100%);
+    margin-bottom: 15px;
+  }
+  background: var(--linear, linear-gradient(90deg, #E02626 0%, #F0831F 100%));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 0;
+  line-height: 1;
+  font-weight: 600;
+  font-size: 14px;
+  text-transform: uppercase;
+  padding: 13px 15px;
+}
+
+// section-title-1
+.hpt-title-1 {
+  color: #00071A;
+  font-size: 62px;
+  font-weight: 700;
+  line-height: 1.16;
+  margin-bottom: 0;
+  @media #{$lg} {
+    font-size: 55px;
+  }
+  @media #{$sm} {
+    font-size: 50px;
+  }
+  @media #{$xs} {
+    font-size: 36px;
+  }
+  @media #{$sm} {
+    font-size: 45px;
+  }
+}
+
+// section-pera-1 
+.hpt-section-pera {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.66;
+  color: #4D515F;
+  margin-bottom: 0;
+}
+
+// -------------------------------------------- home-2 ----------------------------------------
+
+// subtitle-1
+.section-subtitle-2 {
+  &-wrap {
+    position: relative;
+    display: inline-block;
+    border-radius: 38px;
+    background: rgba(229, 62, 41, 0.15);    
+    margin-bottom: 15px;
+    margin-left: 20px;
+    .icon-2 {
+      position: absolute;
+      left: -20px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+    .icon-1 {
+      position: absolute;
+      right: -20px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+  background: var(--linear, linear-gradient(90deg, #B60B0B 0%, #FF3838 100%));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "Kanit", sans-serif;
+  margin-bottom: 0;
+  line-height: 1;
+  font-weight: 400;
+  font-size: 16px;
+  text-transform: uppercase;
+  padding: 8px 27px;
+}
+
+.scetion-title-2 {
+  color: #00071A;
+  font-family: $kanit;
+  font-size: 65px;
+  font-weight: 600;
+  line-height: 1.15;
+  margin-bottom: 0;
+  @media #{$xl} {
+    font-size: 56px;
+  }
+  @media #{$lg} {
+    font-size: 52px;
+  }
+  @media #{$sm} {
+    font-size: 48px;
+  }
+  @media #{$xs} {
+    font-size: 34px;
+  }
+  @media #{$sm} {
+    font-size: 42px;
+  }
+}
+
+.section-pera-2 {
+  font-size: 20px;
+  color: #4D515F;
+  font-weight: 400;
+  line-height: 30px;
+  margin-bottom: 0;
+  margin-top: 25px;
+}

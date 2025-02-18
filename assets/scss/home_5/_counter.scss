@@ -1,0 +1,39 @@
+.hap-counter-section  {
+	z-index: 2;
+	overflow: hidden;
+	padding-bottom: 80px;
+}
+.hap-counter-item {
+	&:before {
+		top: 50%;
+		right: 20px;
+		content: '\f666';
+		font-weight: 900;
+		position: absolute;
+		font-family: 'Font Awesome 5 Pro';
+		@extend%gradient-text;
+		transform: translateY(-50%);
+	}
+	h3 {
+		line-height: 1;
+		color: #000000;
+		font-size: 120px;
+		font-weight: 700;
+		padding-bottom: 5px;
+	}
+	p {
+		color: #323131;
+		font-size: 18px;
+	}
+}
+.hap-counter-content {
+	.col-lg-3 {
+		&:last-child {
+			.hap-counter-item {
+				&:before {
+					display: none;
+				}
+			}
+		}
+	}
+}

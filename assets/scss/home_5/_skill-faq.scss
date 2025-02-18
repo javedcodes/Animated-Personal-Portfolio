@@ -1,0 +1,176 @@
+.hap-skill-faq-section {
+	z-index: 1;
+	overflow: hidden;
+	padding: 140px 0px 120px;
+	.hap-section-title {
+		max-width: 870px;
+	}
+	&:before,
+	&:after { 
+		left: 0;
+		top: -70px;
+		z-index: -1;
+		content: "";
+		width: 105%;
+		height: 110px;
+		z-index: 1;
+		position: absolute;
+		background-color: #fff;
+		transform: rotate(-2deg);
+	}
+	&:after {
+		top: auto;
+		bottom: -70px;
+	}
+}
+.hap-skill-content {
+	padding: 50px 0px 100px;
+}
+.hap-skill-progress-area {
+	padding-top: 45px;
+}
+.hap-skill-progress-item {
+	margin-bottom: 35px;
+	padding-bottom: 40px;
+	border-bottom: 1px solid #373737;
+	&:last-child {
+		margin-bottom: 0;
+		padding-bottom: 0;
+		border-bottom: none;
+	} 
+	.skill-icon {
+		width: 110px;
+		height: 110px;
+		margin-right: 35px;
+		border-radius: 100%;
+		background-color: #000000;
+	}
+	.skill-text {
+		max-width: 365px;
+		h3 {
+			color: #fff;
+			font-size: 20px;
+			font-weight: 700;
+			padding-bottom: 15px;
+		}
+		p {
+			color: #fff;
+		}
+	}
+	.skill-set-percent {
+		margin-top: 20px;
+		.progress {
+			height: 10px;
+			border-radius: 0;
+			position: relative;
+			overflow: visible;
+			border-radius: 30px;
+			background-color: #383535;
+			span {
+				top: -3px;
+				right: 25px;
+				color: #fff;
+				font-size: 12px;
+				font-weight: 600;
+				position: relative;
+			}
+		}
+		.progress-bar {
+			width: 0;
+			left: 0px;
+			top: 0px;
+			float: left;
+			height: 100%;
+			position: relative;
+			border-radius: 30px;
+			transition:  1s all ease-in-out;
+			background: var(--hap-gradient-color);
+		}
+	}
+}
+.hap-skill-img {
+	overflow: hidden;
+	margin-left: 60px;
+	border-radius: 30px;
+	display: inline-block;
+}
+.hap-faq-img-wrapper {
+	margin-right: 40px;
+	padding-bottom: 70px;
+	.hap-faq-img1 {
+		overflow: hidden;
+		border-radius: 25px;
+	}
+	.hap-faq-img2 {
+		left: 0;
+		bottom: 0;
+		overflow: hidden;
+		border-radius: 25px;
+	}
+}
+.hap-faq-accordion-area {
+	.hap-accordion {
+		margin-top: 20px;
+	}
+	.hap-section-title {
+		h2 {
+			font-size: 65px;
+		}
+	}
+	.accordion-item {
+		border:  none;
+		overflow: hidden;
+		border-radius: 0;
+		position: relative;
+		margin-bottom: 10px;
+		padding: 10px 0px 25px;
+		background-color: transparent;
+		transition: all 500ms ease;
+		border-bottom: 1px solid #373737;
+	}
+	.accordion-button {
+		color: #fff;
+		font-size: 21px;
+		font-weight: 700;
+		position: relative;
+		padding: 5px 0px 0px;
+		font-family: var(--hap-heading);
+		background-color: transparent;
+		span {
+			color: #fff;
+			max-width: 95%;
+		}
+	}
+	.accordion-button:focus {
+		border: none;
+		box-shadow: none;
+	}
+	.accordion-body {
+		padding: 0;
+		color: #BAC1D4;
+		font-size: 19px;
+		line-height: 30px;
+		padding-top: 15px;
+		transition: all 500ms ease;
+	}
+	.accordion-button::after {
+		right: 5px;
+		content: '\f067';
+		font-weight: 300;
+		position: absolute;
+		border-radius: 100%;
+		background-image: none;
+		color: #fff;
+		font-family: 'Font Awesome 5 Pro';
+	}
+	.accordion-button:not(.collapsed) {
+		span {
+			@extend%gradient-text;
+		}
+		&:after {
+			content: '\f068';
+			color: var(--base-color);
+			@extend%gradient-text;
+		}
+	}
+}

@@ -1,0 +1,70 @@
+.bi-pricing-section-2 {
+	z-index: 1;
+	overflow: hidden;
+	padding: 130px 0px 100px;
+	.bi-side-shape {
+		z-index: -1;
+		&.shape_1 {
+			right: 0;
+			top: -100%;
+		}
+	}
+}
+.bi-pricing-content-2 {
+	padding-top: 45px;
+}
+.bi-pricing-item-2 {
+	overflow: hidden;
+	border-radius: 25px;
+	padding: 75px 60px 55px;
+	.bi-pricing-title-2 {
+		margin-bottom: 35px;
+		padding-bottom: 50px;
+		border-bottom: 2px solid rgba(255, 255, 255, .2);
+		span {
+			font-size: 14px;
+			font-weight: 400;
+			color: var(--base-color);
+		}
+		h3 {
+			color: #fff;
+			font-weight: 600;
+			font-weight: 33px;
+			padding: 14px 0px 25px;
+		}
+		h4 {
+			font-size: 32px;
+			font-weight: 700;
+			color: var(--base-color);
+			sub {
+				bottom: 0;
+				color: #e2dee7;
+				font-size: 14px;
+				font-weight: 400;
+				letter-spacing: 3px;
+				text-transform: uppercase;
+			}
+		}
+	}
+	.bi-price-list-area {
+		li {
+			font-size: 15px;
+			font-weight: 500;
+			padding-left: 28px;
+			margin-bottom: 15px;
+			position: relative;
+			&:before {
+				top: 0;
+				left: 0;
+				content: '\f00c';
+				font-weight: 400;
+				position: absolute;
+				color: var(--base-color);
+				font-family: 'Font Awesome 5 Pro';
+			}
+		}
+	}
+	.bi-btn-2 {
+		margin-top: 40px;
+	}
+}

@@ -1,0 +1,362 @@
+@media screen and (max-width: 1500px) { 
+	.hap-about-img-area {
+		left: 0;
+	}
+	.hap-about-text-area {
+		max-width: 650px;
+	}
+	.hap-team-slider-content .hap-carousel-arrow-next-prev, 
+	.hap-testimonial-content .hap-carousel-arrow-next-prev {
+		justify-content: center;
+		margin-top: 50px;
+	}
+	.hap-team-slider-content .hap-carousel-arrow-next-prev .hap-team-button-prev,
+	.hap-team-slider-content .hap-carousel-arrow-next-prev .hap-team-button-next,
+	.hap-testimonial-content .hap-testimonial-button-prev,
+	.hap-testimonial-content .hap-testimonial-button-next {
+		width: 50px;
+		color: #fff;
+		height: 50px;
+		position: static;
+		margin: 0px 10px;
+		transform: translateY(0);
+		background-color: var(--hap-base-color);
+	}
+	.hap-carousel-arrow-next-prev .hap-slider-arrow:before, .hap-carousel-arrow-next-prev .hap-slider-arrow:after {
+		display: none;
+	}
+}
+@media screen and (max-width: 1300px) { 
+	.hap-banner-content .hap-banner-image {
+		right: -50px;
+	}
+}
+@media screen and (max-width: 1250px) { 
+	.hap-banner-content .hap-banner-image {
+		right: -70px;
+	}
+	.hap-section-title h2 {
+		font-size: 60px;
+	}
+	.hap-about-text-area {
+		max-width: 550px;
+	}
+	.hap-service-scroll-text-area h2 {
+		font-size: 65px;
+	}
+	.hap-service-scroll-text-area h2 .scroller_item_1 li {
+		top: -20px;
+	}
+	.hap-service-scroll-text-area h2 .scroller_item_1.text_scroller_3 {
+		max-width: 600px;
+	}
+}
+@media screen and (max-width: 1150px) { 
+	.hap-pricing-list-area {
+		padding: 50px 40px 45px;
+	}
+	.hap-faq-accordion-area .hap-section-title h2 {
+		font-size: 60px;
+	}
+	.hap-topic-item .inner-text a {
+		font-size: 18px;
+	}
+	.hap-topic-item {
+		margin: 0px 10px;
+	}
+	.hap-banner-content .hap-banner-image {
+		right: -210px;
+	}
+	.hap-sponsor-content .hap-section-title h2 {
+		font-size: 25px;
+	}
+	.hap-about-img-area {
+		margin: 0 auto;
+		max-width: 500px;
+		margin-bottom: 50px;
+		position: relative !important;
+	}
+	.hap-about-text-wrapper {
+		justify-content: center !important;
+	}
+	.hap-about-section {
+		padding-top: 120px;
+	}
+	.hap-counter-item h3 {
+		font-size: 80px;
+	}
+}
+@media screen and (max-width: 1024px) { 
+	.hap-header-top-area {
+		display: none;
+	}
+	.hap-header-menu-navigation .main-navigation li {
+		margin: 0px 15px;
+	}
+	.hap-header-menu-navigation {
+		padding: 20px 30px;
+	}
+	.hap-banner-content .hap-banner-image {
+		display: none !important
+	}
+	.hap-banner-content .hap-banner-text {
+		max-width: 100%;
+		padding: 0px 15px;
+		text-align: center;
+	}
+	.hap-banner-content .hap-banner-text .hap-section-title p {
+		margin: 0 auto;
+	}
+	.hap-banner-content {
+		padding: 250px 0px 150px;
+	}
+	.hap-sponsor-content {
+		margin-top: 0;
+		border-radius: 0;
+		padding-left: 15px;
+	}
+	.hap-banner-section:before,
+	.hap-service-section:before, .hap-service-section:after,
+	.hap-skill-faq-section:before, .hap-skill-faq-section:after,
+	.hap-team-section:before, .hap-team-section:after,
+	.hap-testimonial-section:before, .hap-testimonial-section:after {
+		display: none;
+	}
+	.hap-service-scroll-text-area {
+		padding: 50px 30px;
+	}
+	.hap-pricing-list-area li {
+		font-size: 18px;
+	}
+	.hap-pricing-list-area {
+		margin-left: 0;
+	}
+	.hap-header-section.sticky-on .hap-header-menu-navigation {
+		padding: 20px 15px;
+	}
+	.hap-about-section,
+	.hap-service-section,
+	.hap-pricing-section,
+	.hap-skill-faq-section,
+	.hap-portfolio-section,
+	.hap-team-section,
+	.hap-counter-section,
+	.hap-testimonial-section,
+	.hap-contact-section,
+	.hap-topic-section {
+		padding: 80px 0px;
+	}
+	.hap-testimonial-item .testimoial-text-author {
+		padding: 65px 90px;
+	}
+	.hap-testimonial-item .testimoial-text-author {
+		max-width: 780px;
+	}
+	.hap-blog-section {
+		padding: 80px 0px 50px;
+	}
+}
+@media screen and (max-width: 991px) {  
+	.hap-header-menu-navigation .main-navigation {
+		display: none;
+	}
+	.hap-header-menu-navigation .hap-header-cta-btn-grp .search-btn {
+		display: none;
+	}
+	.hap-header-menu-navigation .hap-header-cta-btn-grp .cart-btn {
+		margin-right: 45px;
+	}
+	.hap-header-section .mobile_menu_button {
+		top: -56px;
+		display: block;
+		color: var(--hap-base-color);
+	}
+	.hap-header-section {
+		top: 0;
+		background-color: #fff;
+	}
+	.hap-header-menu-navigation {
+		padding: 20px 0px;
+	}
+	.hap-sponsor-content .hap-section-title {
+		margin: 0 auto;
+		text-align: center;
+		margin-bottom: 30px;
+	}
+	.hap-sponsor-content .hap-section-title h2 {
+		font-size: 30px;
+	}
+	.hap-section-title h2 {
+		font-size: 50px;
+	}
+	.hap-service-item .service-title h3 {
+		font-size: 45px;
+	}
+	.hap-skill-img {
+		margin: 0 auto;
+		display: block;
+		margin-top: 40px;
+		text-align: center;
+	}
+	.hap-faq-img-wrapper {
+		margin: 0 auto;
+		max-width: 540px;
+		margin-bottom: 40px;
+	}
+	.hap-counter-item {
+		text-align: center;
+		margin-bottom: 20px;
+	}
+	.hap-counter-item:before {
+		display: none;
+	}
+	.hap-testimonial-item {
+		flex-wrap: wrap;
+	}
+	.hap-testimonial-item .testimoial-img {
+		margin-bottom: 30px;
+	}
+	.hap-testimonial-item .testimoial-img:before,
+	.hap-testimonial-item .testimoial-img:after {
+		display: none;
+	}
+	.hap-topic-content {
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	.hap-topic-item {
+		margin-bottom: 30px;
+	}
+	.hap-footer-widget .menu-widget {
+		padding-left: 0;
+	}
+	.hap-footer-widget {
+		margin-bottom: 30px;
+	}
+	.hap-footer-widget .widget-title {
+		margin-bottom: 20px;
+	}
+	.hap-footer-widget .newslatter-widget {
+		padding-left: 0;
+	}
+	.hap-footer-content {
+		padding: 80px 0px;
+	}
+	.hap-service-item .service-arrow {
+		display: none;
+	}
+	.hap-service-content {
+		padding-top: 40px;
+	}
+}
+@media screen and (max-width: 680px) {  
+	.hap-sponsor-logo-area .sponsor-logo {
+		width: 25%;
+	}
+	.hap-service-item  {
+		flex-wrap: wrap;
+		.hap-service-title-icon {
+			margin-bottom: 20px;
+		}
+	}
+	.hap-service-scroll-text-area h2 {
+		font-size: 30px;
+	}
+	.hap-service-scroll-text-area h2 .scroller_item_1 li {
+		top: 10px;
+		font-size: 14px;
+	}
+	.hap-testimonial-item .testimoial-text-author:before,
+	.hap-testimonial-item .testimoial-text-author:after {
+		display: none;
+	}
+	.hap-testimonial-item .testimoial-text-author {
+		border-radius: 0;
+		padding: 40px 20px;
+		background-color: #fff;
+	}
+	.hap-about-feature-item {
+		width: 100%;
+	}
+	.hap-skill-progress-item .skill-arrow {
+		display: none;
+	}
+	.hap-skill-progress-item .skill-icon-text {
+		flex-wrap: wrap;
+	}
+	.hap-skill-progress-item .skill-icon {
+		margin-bottom: 20px;
+	}
+	.hap-skill-progress-area {
+		padding-top: 0;
+	}
+}
+@media screen and (max-width: 480px) { 
+	.hap-section-title h2 {
+		font-size: 40px;
+	}
+	.hap-btn a {
+		padding: 15px 25px;
+	}
+	.hap-sponsor-logo-area .sponsor-logo {
+		width: 50%;
+	}
+	.hap-about-feature-area:before,
+	.hap-about-feature-area:after {
+		display: none;
+	}
+	.hap-service-item .service-title h3 {
+		font-size: 30px;
+	}
+	.hap-service-item .service-category a {
+		padding: 8px 20px;
+	}
+	.hap-service-scroll-text-area h2 .scroller_item_1 {
+		margin: 0px 5px;
+	}
+	.hap-pricing-tab-img-price .plan-price-title .plan-price h4 {
+		font-size: 18px;
+	}
+	.hap-pricing-tab-img-price .plan-price-title .plan-price {
+		margin-right: 15px;
+	}
+	.hap-pricing-tab-img-price .plan-price-title .price-plan-title h3 {
+		font-size: 22px;
+	}
+	.hap-pricing-tab-img-price .plan-price-title .plan-price {
+		width: 80px;
+		height: 80px;
+		padding: 10px;
+		border-radius: 0;
+	}
+	.hap-faq-accordion-area .hap-section-title h2 {
+		font-size: 40px;
+	}
+	.hap-faq-img-wrapper .hap-faq-img2 {
+		width: 50%;
+	}
+	.hap-service-item .service-title span {
+		font-size: 16px;
+	}
+	.hap-service-scroll-text-area h2 {
+		font-size: 20px;
+	}
+	.hap-service-scroll-text-area h2 .scroller_item_1 li {
+		top: 18px;
+	}
+	.hap-service-scroll-text-area h2 img {
+		display: none;
+	}
+	.hap-team-item .team-img:before {
+		height: 80%;
+	}
+	.hap-footer-widget .tranding-service li a {
+		width: 85px;
+	}
+}
+@media screen and (max-width: 380px) { 
+	.hap-banner-content {
+		padding: 200px 0px 150px;
+	}
+
+}

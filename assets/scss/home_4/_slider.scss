@@ -1,0 +1,220 @@
+@-webkit-keyframes border_animation {
+	0% {
+		-webkit-transform: scale(1);
+		transform: scale(1);
+		opacity: 0;
+	}
+	20% {
+		-webkit-transform: scale(1.05);
+		transform: scale(1.24);
+		opacity: 1;
+	}
+	100% {
+		-webkit-transform: scale(1.7);
+		transform: scale(1.7);
+		opacity: 0;
+	}
+}
+@keyframes border_animation {
+	0% {
+		-webkit-transform: scale(1);
+		transform: scale(1);
+		opacity: 0;
+	}
+	20% {
+		-webkit-transform: scale(1.05);
+		transform: scale(1.24);
+		opacity: 1;
+	}
+	100% {
+		-webkit-transform: scale(1.7);
+		transform: scale(1.7);
+		opacity: 0;
+	}
+}
+.bi-slider-section-4 {
+	overflow: hidden;
+}
+.bi-main-slider-item-4 {
+	z-index: 1;
+	padding: 230px 0px 140px;
+	.slider_men {
+		right: 0;
+		z-index: 1;
+		left: 80px;
+		bottom: 20px;
+		margin: 0 auto;
+		text-align: center;
+		opacity: 0;
+		visibility: hidden;
+		transform: translateX(180px);
+	}
+	.shape_1 {
+		z-index: -1;
+		top: 190px;
+		left: 200px;
+		opacity: 0;
+		visibility: hidden;
+		transform: translateX(-80px);
+	}
+	.bi-main-slider-text {
+		margin: 0 auto;
+		max-width: 1300px;
+		h1 {
+			font-weight: 700;
+			font-size: 153px;
+			text-transform: uppercase;
+			color: var(--base-color);
+			-webkit-text-fill-color: transparent;
+			-webkit-text-stroke-width: 2px;
+			-webkit-text-stroke-color: var(--base-color);
+			opacity: 0;
+			visibility: hidden;
+			transform: translateX(-80px);
+			span {
+				color: #fff;
+				display: block;
+				font-size: 131px;
+				-webkit-text-fill-color: #fff;
+				-webkit-text-stroke-width: 2px;
+				-webkit-text-stroke-color: #fff
+			}
+			strong {
+				display: flex;
+				font-size: 310px;
+				font-weight: 900;
+				background: linear-gradient(180deg, #FF3838 0%, rgba(255, 56, 56, 0.00) 100%);
+				background-clip: text;
+				-webkit-background-clip: text;
+				-webkit-text-fill-color: inherit;
+				-webkit-text-stroke-width: 2px;
+				-webkit-text-stroke-color: transparent;
+			}
+		}
+		.bi-slider-text {
+			right: 0;
+			top: 50px;
+			z-index: 2;
+			max-width: 350px;
+			text-align: right;
+			position: absolute;
+			opacity: 0;
+			visibility: hidden;
+			transform: translateY(80px);
+			p {
+				color: #fff;
+				padding-bottom: 44px;
+			}
+		}
+	}
+	.bi-slider-watch-video {
+		right: 0;
+		left: 23%;
+		z-index: 6;
+		bottom: 60px;
+		margin: 0 auto;
+		position: absolute;
+		transform: translateX(100px);
+		opacity: 0;
+		visibility: hidden;
+		transform: translateX(-80px);
+		.inner-icon {
+			color: #fff;
+			width: 95px;
+			height: 95px;
+			border-radius: 100%;
+			margin-right: 30px;
+			background-color: var(--base-color);
+			.video_btn_border {
+				top: 0;
+				left: 0;
+				opacity: 0;
+				width: 100%;
+				height: 100%;
+				border-radius: 100%;
+				position: absolute;
+				-webkit-animation-play-state: running;
+				animation-play-state: running;
+				border: 20px solid rgba(27, 28, 53, 0.7);
+				-webkit-animation: border_animation 3.9s linear 0s infinite;
+				animation: border_animation 3.9s linear 0s infinite;
+				&.border_wrap-2 {
+					-webkit-animation-delay: 1.3s;
+					animation-delay: 1.3s;
+				}
+				&.border_wrap-3 {
+					-webkit-animation-delay: 2.6s;
+					animation-delay: 2.6s;
+				}
+			}
+		}
+		.inner-text {
+			h4 {
+				color: #fff;
+				font-size: 24px;
+				font-weight: 600;
+			}
+			span {
+				font-weight: 300;
+				color: var(--base-color);
+				font-family: var(--heading);
+			}
+		}
+	}
+}
+.bi-main-slider-next-prev {
+	.bi-main-slider-arrow-4 {
+		z-index: 5;
+		color: #fff;
+		width: 300px;
+		bottom: 80px;
+		height: 300px;
+		font-size: 50px;
+		position: absolute;
+		border-radius: 100%;
+		&.bi-main-button-prev-4 {
+			left: -150px;
+			padding-right: 70px;
+		}
+		&.bi-main-button-next-4 {
+			right: -150px;
+			padding-left: 70px;
+		}
+	}
+}
+.bi-main-slider-4 {
+	.swiper-slide-active {
+		.bi-main-slider-item-4 {
+			.slider_men {
+				opacity: 1;
+				visibility: visible;
+				transition: all 1500ms ease;
+				transform: translateX(0);
+				transition-delay: 1400ms;
+			}
+			.bi-main-slider-text {
+				h1 { 
+					opacity: 1;
+					visibility: visible;
+					transition: all 1000ms ease;
+					transform: translateX(0);
+					transition-delay: 500ms;
+				}
+				.bi-slider-text {
+					opacity: 1;
+					visibility: visible;
+					transition: all 1600ms ease;
+					transform: translateX(0);
+					transition-delay: 1200ms;
+				}
+			}
+			.bi-slider-watch-video {
+				opacity: 1;
+				visibility: visible;
+				transition: all 1000ms ease;
+				transform: translateX(0);
+				transition-delay: 1500ms;
+			}
+		}
+	}
+}

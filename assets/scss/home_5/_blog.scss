@@ -1,0 +1,53 @@
+.hap-blog-section {
+	z-index: 2;
+	overflow: hidden;
+	padding: 110px 0px 80px;
+}
+.hap-blog-content {
+	padding-top: 50px;
+}
+.hap-blog-item {
+	margin: 0 auto;
+	max-width: 402px;
+	margin-bottom: 30px;
+	.blog-img-meta {
+		margin-bottom: 25px;
+		.blog-img {
+			max-width: 380px;
+			overflow: hidden;
+			border-radius: 10px;
+			img {
+				transition: all 500ms ease;
+			}
+		}
+		.blog-meta {
+			right: 0;
+			top: 35px;
+			color: #fff;
+			font-size: 14px;
+			font-weight: 700;
+			padding: 25px 15px;
+			border-radius: 30px;
+			writing-mode: vertical-rl;
+			background: var(--hap-gradient-color);
+		}
+	}
+	.blog-text {
+		max-width: 325px;
+		h3 {
+			color: #070707;
+			font-size: 24px;
+			font-weight: 700;
+			&:hover {
+				color: var(--hap-base-color);
+			}
+		}
+	}
+	&:hover {
+		.blog-img {
+			img {
+				transform: scale(1.05);
+			}
+		}
+	}
+}

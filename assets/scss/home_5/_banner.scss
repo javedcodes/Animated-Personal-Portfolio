@@ -1,0 +1,61 @@
+.hap-banner-section {
+	overflow: hidden;
+	&:before {
+		left: 0;
+		bottom: -50px;
+		content: "";
+		width: 105%;
+		height: 110px;
+		z-index: 1;
+		position: absolute;
+		background-color: #fff;
+		transform: rotate(-3deg);
+	}
+}
+.hap-banner-content {
+	padding: 350px 0px 335px;
+	.hap-banner-text {
+		max-width: 540px;
+		.hap-btn {
+			margin-top: 30px;
+		}
+		.hap-section-title {
+			p {
+				max-width: 510px;
+			}
+		}
+	}
+	.hap-banner-image {
+		right: 0;
+		top: 240px;
+		.hap-banner-img2,
+		.hap-banner-img1 {
+			margin-left: 10px;
+			img {
+				border-radius: 200px;
+			}
+		}
+		.hap-banner-shape4 {
+			left: 0;
+			top: 38%;
+			right: 0;
+			z-index: 2;
+			text-align: center;
+		}
+		.hap-banner-img1 {
+			margin-top: 20px;
+		}
+		.hap-banner-shape1 {
+			left: -75px;
+			bottom: 60px;
+		}
+		.hap-banner-shape2 {
+			left: -50px;
+			bottom: -10px;
+		}
+		.hap-banner-shape3 {
+			right: -30px;
+			bottom: -20px;
+		}
+	}
+}

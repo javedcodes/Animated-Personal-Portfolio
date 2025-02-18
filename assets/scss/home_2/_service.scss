@@ -1,0 +1,69 @@
+.bi-service-section-2 {
+	padding: 70px 0px 140px;
+}
+.hover-reveal {
+	position: fixed;
+	width: 200px;
+	height: 150px;
+	top: 0;
+	left: 0;
+	pointer-events: none;
+	opacity: 0;
+}
+
+.hover-reveal__inner,
+.hover-reveal__img {
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+
+.hover-reveal__deco {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: #181314;
+}
+
+.hover-reveal__img {
+	background-size: cover;
+	background-position: 50% 50%;
+}
+.bi-service-item-wrapper-2 {
+	padding-top: 30px;
+}
+.bi-service-list-item {
+	padding: 0px 100px;
+	a {
+		z-index: 1;
+		color: #fff;
+		line-height: 1;
+		font-size: 64px;
+		font-weight: 700;
+		margin: 40px 35px;
+		padding-left: 45px;
+		position: relative;
+		display: inline-block;
+		text-transform: uppercase;
+		img {
+			left: 0;
+			top: -18px;
+			width: 94px;
+			z-index: -1;
+			height: 94px;
+			position: absolute;
+			border-radius: 100%;
+			transition: all 500ms ease;
+		}
+		&:hover {
+			color: var(--base-color);
+			img {
+				left: 15px;
+				transform: scale(0);
+			}
+		}
+
+	}
+}

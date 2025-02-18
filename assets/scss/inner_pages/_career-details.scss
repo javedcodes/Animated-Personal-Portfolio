@@ -1,0 +1,38 @@
+.bi-career-details-text-area {
+	padding: 30px;
+	border-radius: 10px;
+	border: 1px solid rgba(22, 35, 43, 0.10);
+	.bi-career-details-img {
+		border-radius: 10px;
+		margin-bottom: 40px;
+	}
+	ul {
+		margin-bottom: 30px;
+	}
+	li {
+		padding-left: 25px;
+		position: relative;
+		margin-bottom: 10px;
+		&:before {
+			left: 0;
+			top: 10px;
+			width: 16px;
+			content: '';
+			height: 16px;
+			position: absolute;
+			background-repeat: no-repeat;
+			background-image: url(../img/logo/check.png);
+		}
+	}
+	.salary-limit {
+		color: #000;
+		font-size: 20px;
+		font-weight: 700;
+		margin-bottom: 30px;
+	}
+	.bi-btn-3 {
+		a {
+			padding: 13px 18px;
+		}
+	}
+}

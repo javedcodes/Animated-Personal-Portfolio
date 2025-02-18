@@ -1,0 +1,133 @@
+:root {
+	--hap-heading: 'Space Grotesk';
+	--hap-body-font: 'Space Grotesk';
+	--hap-body-color: #0d0d0d ;
+	--hap-base-color: #6d55e9;
+	--hap-title-color: #000000;
+	--hap-gradient-color: linear-gradient( 90deg, rgb(89,86,240) 0%, rgb(255,80,184) 100%);;
+}
+%gradient-text {
+	background: var(--hap-gradient-color);
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+@-webkit-keyframes gradient_animation {
+	0% {
+		background-position: 0 0;
+	}
+	50% {
+		background-position: 100% 0;
+	}
+	100% {
+		background-position: 0 0;
+	}
+}
+@keyframes gradient_animation {
+	0% {
+		background-position: 0 0;
+	}
+	50% {
+		background-position: 100% 0;
+	}
+	100% {
+		background-position: 0 0;
+	}
+}
+.haptic-home {
+	line-height: 1.579;
+	font-size: 19px;
+	overflow-x: hidden !important;
+	color: var(--hap-body-color);
+	font-family: var(--hap-body-font);
+	.container {
+		max-width: 1280px;
+	}
+}
+.hap-headline h1,
+.hap-headline h2,
+.hap-headline h3,
+.hap-headline h4,
+.hap-headline h5,
+.hap-headline h6 {
+	margin-bottom: 0;
+	font-weight: 400;
+	line-height: 1.143;
+	font-family: var(--hap-heading);
+}
+.hap-section-title {
+	.sub-title {
+		font-size: 16px;
+		font-weight: 600;
+		position: relative;
+		padding-left: 23px;
+		margin-bottom: 5px;
+		display: inline-block;
+		@extend%gradient-text;
+		&:before {
+			top: 0;
+			left: 0;
+			content: '\f666';
+			font-weight: 900;
+			position: absolute;
+			font-family: 'Font Awesome 5 Pro';
+			@extend%gradient-text;
+		}
+	}
+	h2 {
+		font-size: 72px;
+		font-weight: 700;
+		color: var(--hap-title-color);
+	}
+	p {
+		padding-top: 5px;
+	}
+	&.text-center {
+		margin: 0 auto;
+		max-width: 750px;
+	}
+	&.dark-bg-title {
+		h2 {
+			color: #fff;
+		}
+		p {
+			color: #e1e1e1;
+		}
+	}
+}
+.hap-btn {
+	a {
+		color: #fff;
+		font-size: 17px;
+		font-weight: 500;
+		padding: 18px 30px;
+		border-radius: 40px;
+		display: inline-block;
+		transition: all 200ms linear 0ms;
+		background: linear-gradient(90deg, #6256ed 0%, #f350bc 50%, #6256ed);
+		background-size: 200%, 1px;
+		i {
+			margin-left: 10px;
+			transform: rotate(-45deg);
+			transition: all 200ms linear 0ms;
+		}
+		&:hover {
+			background-position: 120%;
+			i {
+				transform: rotate(0deg);
+			}
+		}
+		
+	}
+}
+.hap-img-animation {
+	img {
+		transition: 1.3s cubic-bezier(0.5, 0.5, 0, 1);
+		clip-path: polygon(0% 0%, 0% 0%, 0% 100%, 0% 100%);
+	}
+	&.active {
+		img {
+			clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+		}
+	}
+}

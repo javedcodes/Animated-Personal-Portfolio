@@ -1,0 +1,15 @@
+.home-2 {
+	color: #e2e2e2;
+	font-size: 16px;
+	font-weight: 300;
+	font-family: var(--heading-2);
+	background-color: var(--body-bg-color);
+	.headline h1,
+	.headline h2,
+	.headline h3,
+	.headline h4,
+	.headline h5,
+	.headline h6 { 
+		font-family: var(--heading-2);
+	}
+}

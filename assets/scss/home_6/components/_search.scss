@@ -1,0 +1,135 @@
+
+@use '../abstracts/mixins' as *;
+@use '../abstracts/variables' as *;
+
+
+
+
+// search-box-popup
+.popup-search-box {
+  background-color: #fff;
+  position: fixed;
+  display: flex;
+  left: 0;
+  top: -100px;
+  width: 100%;
+  z-index: 9999;
+  height: 100vh;
+  align-items: center;
+  transform: scaleY(0);
+  transition: all .3s;
+  transform-origin: top;
+  opacity: 0;
+  visibility: hidden;
+  .title {
+      color: #00071A;
+      font-weight: 600;
+      margin-bottom: 25px;
+
+      @media #{$xs} {
+          font-size: 30px;
+      }
+      @media #{$sm} {
+          font-size: 36px;
+      }
+  }
+  &-form {
+      display: flex;
+      @media #{$xs} {
+          flex-wrap: wrap;
+      }
+      @media #{$sm} {
+          flex-wrap: nowrap;
+      }
+      .popup-search-box-close-action-btn {
+          height: 60px;
+          width: 60px;
+          font-size: 30px;
+          border: none;
+          outline: none;
+          border-radius: 5px;
+          margin-left: 25px;
+          background: transparent;
+          border: 1px solid rgba(0, 0, 0, 0.2);
+          color: #111;
+          flex: 0 0 auto;
+          @media #{$xs} {
+              margin: auto;
+          }
+          @media #{$sm} {
+              margin-left: 25px;
+              margin-right: 0;
+              margin-top: 0;
+              margin-bottom: 0;
+          }
+          &:hover {
+              background-color: rgba(0, 0, 0, 0.2);
+              border-color: transparent;
+          }
+      }
+  }
+
+  @media #{$xs} {
+      height: 100%;
+      overflow-y: auto;
+  }
+  &.active {
+      top: 0;
+      opacity: 1;
+      visibility: visible;
+      transform: scaleY(1);
+  }
+  & form {
+      position: relative;
+      width: 100%;
+      @media #{$xs} {
+          margin-bottom: 50px;
+      }
+      @media #{$sm} {
+          margin-bottom: 0px;
+      }
+  }
+  &-input {
+      & input {
+          width: 100%;
+          height: 60px;
+          background: transparent;
+          border: 1px solid rgba(0, 0, 0, 0.2);
+          border-radius: 5px;
+          font-size: 14px;
+          color: #111;
+          padding: 0 30px;
+          padding-right: 115px;
+          &::placeholder {
+              color: #111;
+              font-size: 14px;
+          }
+          @media #{$xs} {
+              width: 100%;
+              background-color: transparent;
+              opacity: .7;
+          }
+      }
+  }
+  & button[type="submit"] {
+      position: absolute;
+      right: 0;
+      top: 0px;
+      bottom: 0;
+      padding: 0 30px;
+      background: transparent;
+      color: #111;
+      font-size: 24px;
+      border-radius: 0;
+      border-top-right-radius: 5px;
+      border-bottom-right-radius: 5px;
+      border-left: 1px solid rgba(0, 0, 0, 0.2);
+      border-right: none;
+      border-top: none;
+      border-bottom: none;
+      &:hover {
+          color: var(--clr-common-white);
+          background-color: rgba(0, 0, 0, 0.2);
+      }
+  }
+}

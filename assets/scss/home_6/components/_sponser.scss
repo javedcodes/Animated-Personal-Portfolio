@@ -1,0 +1,27 @@
+@use '../abstracts/mixins' as *;
+@use '../abstracts/variables' as *;
+
+.orixy__sponser {
+    &-area {
+        &:is(.pt-125) {
+            @media #{$xs} {
+                padding-top: 70px;
+            }
+            @media #{$sm} {
+                padding-top: 125px;
+            }
+        }
+    }
+    &-title {
+        position: relative;
+        z-index: 1;
+    }
+}
+.orixy__sponser-slider {
+    .swiper-wrapper {
+        .swiper-slide {
+            justify-content: center;
+            text-align: center;
+        }
+    }
+}
